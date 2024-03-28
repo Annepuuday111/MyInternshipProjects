@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazing Teddy Bear</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightblue;
+    color: #fff;
+    text-align: center;
+    padding: 3px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    flex: 0 0 45%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex: 0 0 50%;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column-reverse;
+    }
+
+    .product-details, .product-image {
+        flex: 1;
+        width: 100%;
+    }
+
+    .product-details {
+        margin-top: 20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Amazing Teddy Bear</h1>
+</header>
+
+<main>
+    <div class="product">
+        <div class="product-image">
+            <img src="https://a23d.co/cdn-cgi/imagedelivery/S4svCqSolndHzMne84t1OQ/A23DMOD035250A_Preview/productpage" alt="Teddy Bear Image">
+        </div>
+        <div class="product-details">
+            <h2>Cute Teddy Bear</h2>
+            <p class="price">$19.99</p>
+            <p class="description">Meet our adorable Teddy Bear! Soft, cuddly, and perfect for snuggling, this plush toy is sure to become your child's new best friend.</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
